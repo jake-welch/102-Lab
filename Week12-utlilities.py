@@ -70,3 +70,14 @@ def Intersection(listOne,listTwo):
         if b == 0:
             newList.append(i)
     PrintOutput(newList)
+
+def NotIn(listOne,listTwo):
+    newList = []
+    for i in listOne:
+        b = 1
+        for a in listTwo:
+            if a == i:
+                b = 0
+        if b == 1:
+            newList.append(i)
+    PrintOutput(newList)
