@@ -59,3 +59,14 @@ def Union(listOne,listTwo):
         if b == 1:
             newList.append(i)
     PrintOutput(newList)
+
+def Intersection(listOne,listTwo):
+    newList = []
+    for i in listTwo:
+        b = 1
+        for a in listOne:
+            if a == i:
+                b = 0
+        if b == 0:
+            newList.append(i)
+    PrintOutput(newList)
