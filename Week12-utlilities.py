@@ -19,3 +19,14 @@ def UpdateString(daString,letter,index):
             newString += letter
         a += 1
     print(newString)
+    
+def FindWordCount(someList, word):
+    counter = 0
+    newList = []
+    for i in someList:
+        newList.append(i.split())
+    for i in newList:
+        for a in i:
+            if a.lower() == word.lower():
+                counter += 1
+    PrintOutput(counter)
